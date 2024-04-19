@@ -1,0 +1,57 @@
+<!-- all_result.html -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title >IRIS TABLE</title>
+    <style>
+        .btn-item,
+        button {
+            padding: 10px 5px;
+            margin-top: 20px;
+            border-radius: 5px;
+            border: none;
+            background: #26a9e0;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 400;
+            color: #fff;
+        }
+
+        .btn-item {
+            display: inline-block;
+            margin: 20px 5px 0;
+        }
+
+        button {
+            width: 5%;
+        }
+
+        button:hover,
+        .btn-item:hover {
+            background: #85d6de;
+        }
+
+        body {
+            background-color: #b9c7dc;
+            box-sizing: border-box;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="main-block">
+        <a href="/">
+            <button class="btn" type="button">BACK</button>
+        </a>
+        {% if alldata %}
+        <h2>{{ alldata | safe }}</h2>
+        {% endif %}
+    </div>
+
+</body>
+
+</html>
